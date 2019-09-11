@@ -1,141 +1,273 @@
-#page title
-page_title                                :                                           # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+# ASCII-Font › http://patorjk.com/software/taag/#p=display&f=Slant&t=Phlow
+#
+#      _____ _ __          _____      __  __  _
+#     / ___/(_) /____     / ___/___  / /_/ /_(_)___  ____ ______
+#     \__ \/ / __/ _ \    \__ \/ _ \/ __/ __/ / __ \/ __ `/ ___/
+#    ___/ / / /_/  __/   ___/ /  __/ /_/ /_/ / / / / /_/ (__  )
+#   /____/_/\__/\___/   /____/\___/\__/\__/_/_/ /_/\__, /____/
+#                                                 /____/
+#
+# Title of your website
+title: 'Feeling Responsive'
 
-# App Info
-ios_app_id                                : 1234793120                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
+# The slogan describes your website and is used on homepage in <title> and other important places
+slogan: 'A Flexible Theme for Jekyll'
 
-appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
-playstore_link                            :                                           # Enter Google Play Store URL.
-presskit_download_link                    : https://emilbaehr.com                                          # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
-                                                                                      # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
+# The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
+description: '»Feeling Responsive« is a responsive theme for Jekyll based on the fabulous foundation framework with beautiful typography and a bright color palette.'
 
-app_icon                                  : # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
-app_name                                  :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Write a short tagline for your app.
+# The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
+credits: '<p>Created with &hearts; by <a href="http://phlow.de/">Phlow</a> with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a>.</p>'
 
-enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
+# Main author of the website
+# See > authors.yml
+author: phlow
 
+# This URL is the main address for absolute links. Don't include a slash at the end.
+#
+url: 'https://phlow.github.io'
+baseurl: '/feeling-responsive'
 
+# This is for the editing function in _/includes/improve_content
+# Leave it empty if your site is not on GitHub/GitHub Pages
+improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
 
-# Information About Yourself
-your_name                                 : Emil Baehr                                
-your_link                                 : https://emilbaehr.com                     
-your_city                                 : Copenhagen                                
-email_address                             : emil.baehr@gmail.com
-facebook_username                         :                                           
-instagram_username                        : ebaehr
-twitter_username                          : ebaehr
-github_username                           : emilbaehr
-youtube_username                          :
-
-
-
-# Feature List                            Edit, add or remove features to be presented.
-features                                  :
-
-  - title                                 : GitHub Pages Jekyll Theme
-    description                           : Designed for GitHub Pages. Fork. Edit _config.yml. Upload screenshot/video. Push to gh-pages branch. Voilá!
-    fontawesome_icon_name                 : magic
-    
-  - title                                 : iPhone Device Preview
-    description                           : Preview your app in the context of an iPhone device. Five different device colors included.
-    fontawesome_icon_name                 : mobile
-
-  - title                                 : Video Support
-    description                           : Preview app video on the iPhone device simply by placing your video files in the videos folder.
-    fontawesome_icon_name                 : play-circle
-
-  - title                                 : Automatic Icon and Metadata
-    description                           : Enter iOS app ID in the _config.yml file to automatically fetch app icon, price and App Store Link.
-    fontawesome_icon_name                 : sync
-
-  - title                                 : Easy to Tweak
-    description                           : Tweak accent color, images, icons and transparency via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : adjust
-  
-  - title                                 : Feature List
-    description                           : Add features (like this one) to your site via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : star
-
-  - title                                 : Smart App Banner
-    description                           : Display a smart app banner on iOS devices.
-    fontawesome_icon_name                 : arrow-alt-circle-down
-
-  - title                                 : Social Links
-    description                           : Easily add social media accounts and contact info in the footer via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : link
-
-  - title                                 : FontAwesome Support
-    description                           : Pick custom Font Awesome icons for the feature list via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : info-circle
-
-  - title                                 : # New Feature Title
-    description                           : # New Feature Description
-    fontawesome_icon_name                 : # Enter Font Awesome icon name (e.g. star). Find icons on fontawesome.com/icons.
+# This URL points directly to the images directory making
+# things easier to link to images in posts and templates. It needs a slash at the end.
+#
+# Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
+# Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
+#
+urlimg: 'https://phlow.github.io/feeling-responsive/images/'
 
 
+# Logo size is 600x80 pixels
+logo: "logo.png"
 
-# Theme Settings
-topbar_color                              : "#000000"
-topbar_transparency                       : 0.1
-topbar_title_color                        : "#ffffff"
-
-cover_image                               : assets/headerimage.png                    # Replace with alternative image path or image URL.
-cover_overlay_color                       : "#363b3d"
-cover_overlay_transparency                : 0.8
-
-device_color                              : black                                     # Set to: blue, black, yellow, coral or white.
-
-body_background_color                     : "#ffffff"
-
-link_color                                : "#1d63ea"
-
-app_title_color                           : "#ffffff"
-app_price_color                           : "#ffffff"
-app_description_color                     : "#ffffff"
-
-feature_title_color                       : "#000000"
-feature_text_color                        : "#666666"
-
-feature_icons_foreground_color            : "#1d63ea"
-feature_icons_background_color            : "#e6e6e6"
-
-social_icons_foreground_color             : "#666666"
-social_icons_background_color             : "#e6e6e6"
-
-footer_text_color                         : "#666666"
+# Plugins
+plugins:
+    - jekyll-asciidoc
+    - jekyll-gist
+    - jekyll-paginate
 
 
+#       ____              _             __  _
+#      / __ \____ _____ _(_)___  ____ _/ /_(_)___  ____
+#     / /_/ / __ `/ __ `/ / __ \/ __ `/ __/ / __ \/ __ \
+#    / ____/ /_/ / /_/ / / / / / /_/ / /_/ / /_/ / / / /
+#   /_/    \__,_/\__, /_/_/ /_/\__,_/\__/_/\____/_/ /_/
+#               /____/
+#
+paginate: 5                      # Paginates all X entries
+paginate_path: "blog/page:num"   # Pagination path › Important for blog page in /blog/ to work
 
 
-
-
-
-
-
-
-
-
-
-####################################################
-### Jekyll Configuration. No need to touch this. ###
-####################################################
-
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :compressed # You might prefer to minify using :compressed
-
+# Theme works best with Kramdown (using the table of contents function)
+markdown           : kramdown
+permalink          : /:categories/:title/
+highlight          : rouge
+excerpt_separator  : "<!--more-->"
+include            : ['.htaccess']
 # Exclude these files from your production _site
 exclude:
-  - LICENSE
-  - README.md
-  - CNAME
+    - .sass-cache
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - INSTALL.md
+    - vendor
 
-collections:
-  pages:
-    output: true
-    permalink: /:path/
 
-# Markdown rendering
-markdown: kramdown
+# The language setting is used in /includes/header.html for html-settings
+language: 'en'
+
+
+# Used › default.html front-matter and compress.html
+# Options › http://jch.penibelst.de
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  profile: false
+  ignore:
+    envs: [development]
+
+
+#
+#       ____       ____            ____
+#      / __ \___  / __/___ ___  __/ / /_
+#     / / / / _ \/ /_/ __ `/ / / / / __/
+#    / /_/ /  __/ __/ /_/ / /_/ / / /_
+#   /_____/\___/_/  \__,_/\__,_/_/\__/
+#
+# Default Settings
+
+defaults:
+  -
+    scope:
+      path: '' 				# an empty string here means all files in the project
+      type: 'pages'
+    values:
+      show_meta: false 	# Hide metadata for all pages
+      # sidebar:    		# Possible values › left, right › by default there will be no sidebar
+      comments: false
+      author: phlow     # Default author for pages
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+      show_meta: true   # Show metadata for all posts
+      # sidebar:        # Possible values › left, right › by default there will be no sidebar
+      comments: false
+      author: phlow     # Default author for posts
+
+
+
+#       _   __            _             __  _
+#      / | / /___ __   __(_)___ _____ _/ /_(_)___  ____
+#     /  |/ / __ `/ | / / / __ `/ __ `/ __/ / __ \/ __ \
+#    / /|  / /_/ /| |/ / / /_/ / /_/ / /_/ / /_/ / / / /
+#   /_/ |_/\__,_/ |___/_/\__, /\__,_/\__/_/\____/_/ /_/
+#                       /____/
+#
+#  Open _data/navigation.yml to adjust the left and right topbar navigation
+#
+
+
+
+#     _____ __________
+#    / ___// ____/ __ \
+#    \__ \/ __/ / / / /
+#   ___/ / /___/ /_/ /
+#  /____/_____/\____/    Verify Website to Webmaster Tools
+
+google_author:             'https://plus.google.com/u/0/118311555303973066167'
+google_site_verification:  'Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ'
+bing_webmastertools_id:    '0FB4C028ABCF07C908C54386ABD2D97F'
+# yandex_site_verification:  ''
+# alexa_verify_id:           ''
+
+
+
+#       ______            _
+#      / ____/___ __   __(_)________  ____  _____
+#     / /_  / __ `/ | / / / ___/ __ \/ __ \/ ___/
+#    / __/ / /_/ /| |/ / / /__/ /_/ / / / (__  )
+#   /_/    \__,_/ |___/_/\___/\____/_/ /_/____/   Favicon-Crap: Favicons, Chrome, Android & Apple Touch Buttons
+#                                                 More information » https://mathiasbynens.be/notes/touch-icons
+
+favicon-32x32:                          'favicon-32x32.png'
+touch-icon-192x192:                     'touch-icon-192x192.png'
+apple-touch-icon-180x180-precomposed:   'apple-touch-icon-180x180-precomposed.png'
+apple-touch-icon-152x152-precomposed:   'apple-touch-icon-152x152-precomposed.png'
+apple-touch-icon-144x144-precomposed:   'apple-touch-icon-144x144-precomposed.png'
+apple-touch-icon-120x120-precomposed:   'apple-touch-icon-120x120-precomposed.png'
+apple-touch-icon-114x114-precomposed:   'apple-touch-icon-114x114-precomposed.png'
+apple-touch-icon-76x76-precomposed:     'apple-touch-icon-76x76-precomposed.png'
+apple-touch-icon-72x72-precomposed:     'apple-touch-icon-72x72-precomposed.png'
+apple-touch-icon-precomposed:           'apple-touch-icon-precomposed.png'
+msapplication_tileimage:                'msapplication_tileimage.png'               # Size 144x144
+msapplication_tilecolor:                '#fabb00'
+
+
+#       ______                __                __
+#      / ____/___ _________  / /_  ____  ____  / /__
+#     / /_  / __ `/ ___/ _ \/ __ \/ __ \/ __ \/ //_/
+#    / __/ / /_/ / /__/  __/ /_/ / /_/ / /_/ / ,<
+#   /_/    \__,_/\___/\___/_.___/\____/\____/_/|_|      Facebook-Optimization › http://j.mp/fb_optimize
+
+og_image:                           'http://images.phlow.de/phlow/phlow_de-logo-512x.png'
+og_locale:                          'en_EN'
+og_type:                            'website'
+
+
+#      _____            _       __   __  ___         ___
+#     / ___/____  _____(_)___ _/ /  /  |/  /__  ____/ (_)___ _
+#     \__ \/ __ \/ ___/ / __ `/ /  / /|_/ / _ \/ __  / / __ `/
+#    ___/ / /_/ / /__/ / /_/ / /  / /  / /  __/ /_/ / / /_/ /
+#   /____/\____/\___/_/\__,_/_/  /_/  /_/\___/\__,_/_/\__,_/
+#
+#  Open _data/socialmedia.yml to adjust the left and right topbar navigation
+#
+
+socialmedia:
+    twitter: phlow
+    facebook: phlow.media
+
+
+#        ____  _
+#       / __ \(_)________ ___  _______
+#      / / / / / ___/ __ `/ / / / ___/
+#     / /_/ / (__  ) /_/ / /_/ (__  )
+#    /_____/_/____/\__, /\__,_/____/
+#                    /_/
+#
+# used in _includes/comments
+
+disqus_shortname: feelingresponsive
+
+
+#      _____
+#     / ___/____ ___________
+#     \__ \/ __ `/ ___/ ___/
+#    ___/ / /_/ (__  |__  )     More › http://sass-lang.com/
+#   /____/\__,_/____/____/      More › http://jekyllrb.com/docs/assets/#sassscss
+#
+
+sass:
+    sass_dir : _sass
+    style    : :compressed
+
+
+#       ___                __      __  _
+#      /   |  ____  ____ _/ /_  __/ /_(_)_________
+#     / /| | / __ \/ __ `/ / / / / __/ / ___/ ___/
+#    / ___ |/ / / / /_/ / / /_/ / /_/ / /__(__  )
+#   /_/  |_/_/ /_/\__,_/_/\__, /\__/_/\___/____/      https://www.google.com/analytics/
+#                        /____/
+#
+# used in _includes/footer_scripts
+
+google_analytics_tracking_id: UA-60112281-1
+
+
+
+#   _                 _     _
+#  | |_ __ ___      _| | __| |_ ___
+#  | __/ _` \ \ /\ / / |/ /| __/ _ \
+#  | || (_| |\ V  V /|   < | || (_) |
+#   \__\__,_| \_/\_/ |_|\_(_)__\___/     More › https://www.tawk.to/knowledgebase/
+#
+#  tawk.to is a free live chat app that lets you monitor and chat
+#  with visitors on your website or from a free customizable page
+#
+#  To load the script add tawkto: true in front matter of each page
+#
+# used in _includes/footer_scripts
+
+# tawkto_embed_uri:
+
+
+#     ___              _     __           __
+#    /   |  __________(_)___/ /___  _____/ /_____  _____
+#   / /| | / ___/ ___/ / __  / __ \/ ___/ __/ __ \/ ___/
+#  / ___ |(__  ) /__/ / /_/ / /_/ / /__/ /_/ /_/ / /
+# /_/  |_/____/\___/_/\__,_/\____/\___/\__/\____/_/
+#
+#  Asciidoctor is a fast text processor and publishing toolchain for converting
+#  AsciiDoc content to HTML5, DocBook 5 (or 4.5) and other formats.
+#
+#  https://github.com/asciidoctor/jekyll-asciidoc
+#  https://github.com/asciidoctor
+#
+#
+
+asciidoctor-enabled: false
+asciidoctor:
+  description: testtewtetrue
+  attributes:
+    source-highlighter: coderay
+    coderay-css: style
+    icons: font
